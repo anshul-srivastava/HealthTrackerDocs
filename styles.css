@@ -776,18 +776,23 @@ body {
 }
 
 .footer-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-links a {
-    color: #4f46e5;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 0.95rem;
     transition: color 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
 }
 
 .footer-links a:hover {
-    color: #3730a3;
+    color: #4f46e5;
     text-decoration: underline;
 }
 
