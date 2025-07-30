@@ -332,6 +332,34 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
+    justify-items: center;
+}
+
+/* Special layout for 5 cards - center the last 2 cards */
+.features-grid .feature-card:nth-child(4),
+.features-grid .feature-card:nth-child(5) {
+    grid-column: span 1;
+}
+
+/* For screens that can fit 3 columns, center the last row */
+@media (min-width: 1200px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .features-grid .feature-card:nth-child(4) {
+        grid-column: 1 / 2;
+        justify-self: end;
+        margin-right: 20px;
+    }
+    
+    .features-grid .feature-card:nth-child(5) {
+        grid-column: 2 / 3;
+        justify-self: start;
+        margin-left: 20px;
+    }
 }
 
 .feature-card {
@@ -745,6 +773,22 @@ body {
     color: #94a3b8;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+}
+
+.footer-links {
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #3730a3;
+    text-decoration: underline;
 }
 
 .social-links {
