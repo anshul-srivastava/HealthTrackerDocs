@@ -891,6 +891,27 @@ body {
     color: #94a3b8;
 }
 
+/* App Icon Styling */
+.app-icon {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    /* object-fit: contain;
+    margin-right: 0.5rem; */
+    vertical-align: middle;
+}
+
+/* Ensure consistent sizing in navigation */
+.nav-logo .app-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Ensure consistent sizing in footer */
+.footer-logo .app-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
